@@ -10,8 +10,8 @@ module Refinery
       append_file 'db/seeds.rb', :verbose => true do
         <<-EOH
 
-# Added by Refinery CMS Image Slideshows extension
-Refinery::ImageSlideshows::Engine.load_seed
+# Added by Refinery CMS Image Slides extension
+Refinery::ImageSlides::Engine.load_seed
         EOH
       end
     end

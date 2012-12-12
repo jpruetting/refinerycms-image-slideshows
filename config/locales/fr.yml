@@ -1,8 +1,31 @@
 fr:
   refinery:
     plugins:
+      image_slides:
+        title: Image Slides
       image_slideshows:
         title: Image Slideshows
+    image_slides:
+      admin:
+        image_slides:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Image Slide
+            reorder: Réordonner les Image Slides
+            reorder_done: Fin de réordonnancement des Image Slides
+          records:
+            title: Image Slides
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Image Slide. Cliquer sur
+              "Créer un(e) nouve(au/l/lle) Image Slide" pour créer votre premi(er/ère)
+              image slide.
+          image_slide:
+            view_live_html: Voir ce(t/tte) image slide <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) image slide
+            delete: Supprimer définitivement ce(t/tte) image slide
+      image_slides:
+        show:
+          other: Autres Image Slides
     image_slideshows:
       admin:
         image_slideshows:
@@ -12,10 +35,13 @@ fr:
             reorder_done: Fin de réordonnancement des Image Slideshows
           records:
             title: Image Slideshows
-            sorry_no_results: "Désolé ! Aucun résultat."
-            no_items_yet: 'Il n''y a actuellement aucun(e) Image Slideshow. Cliquer sur "Créer un(e) nouve(au/l/lle) Image Slideshow" pour créer votre premi(er/ère) image slideshow.'
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Image Slideshow. Cliquer
+              sur "Créer un(e) nouve(au/l/lle) Image Slideshow" pour créer votre premi(er/ère)
+              image slideshow.
           image_slideshow:
-            view_live_html: Voir ce(t/tte) image slideshow <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            view_live_html: Voir ce(t/tte) image slideshow <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
             edit: Modifier ce(t/tte) image slideshow
             delete: Supprimer définitivement ce(t/tte) image slideshow
       image_slideshows:
@@ -23,5 +49,7 @@ fr:
           other: Autres Image Slideshows
   activerecord:
     attributes:
-      'refinery/image_slideshows/image_slideshow':
+      refinery/image_slides/image_slide:
+        title: Title
+      refinery/image_slideshows/image_slideshow:
         title: Title

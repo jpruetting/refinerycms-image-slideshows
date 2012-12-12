@@ -1,8 +1,30 @@
 nb:
   refinery:
     plugins:
+      image_slides:
+        title: Image Slides
       image_slideshows:
         title: Image Slideshows
+    image_slides:
+      admin:
+        image_slides:
+          actions:
+            create_new: Lag en ny Image Slide
+            reorder: Endre rekkefølgen på Image Slides
+            reorder_done: Ferdig å endre rekkefølgen Image Slides
+          records:
+            title: Image Slides
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Image Slides enda. Klikk på "Lag en ny Image
+              Slide" for å legge til din første image slide.
+          image_slide:
+            view_live_html: Vis hvordan denne image slide ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne image slide
+            delete: Fjern denne image slide permanent
+      image_slides:
+        show:
+          other: Andre Image Slides
     image_slideshows:
       admin:
         image_slideshows:
@@ -13,9 +35,11 @@ nb:
           records:
             title: Image Slideshows
             sorry_no_results: Beklager! Vi fant ikke noen resultater.
-            no_items_yet: Det er ingen Image Slideshows enda. Klikk på "Lag en ny Image Slideshow" for å legge til din første image slideshow.
+            no_items_yet: Det er ingen Image Slideshows enda. Klikk på "Lag en ny
+              Image Slideshow" for å legge til din første image slideshow.
           image_slideshow:
-            view_live_html: Vis hvordan denne image slideshow ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            view_live_html: Vis hvordan denne image slideshow ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
             edit: Rediger denne image slideshow
             delete: Fjern denne image slideshow permanent
       image_slideshows:
@@ -23,5 +47,7 @@ nb:
           other: Andre Image Slideshows
   activerecord:
     attributes:
-      'refinery/image_slideshows/image_slideshow':
+      refinery/image_slides/image_slide:
+        title: Title
+      refinery/image_slideshows/image_slideshow:
         title: Title

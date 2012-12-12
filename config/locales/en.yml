@@ -1,8 +1,29 @@
 en:
   refinery:
     plugins:
+      image_slides:
+        title: Image Slides
       image_slideshows:
         title: Image Slideshows
+    image_slides:
+      admin:
+        image_slides:
+          actions:
+            create_new: Add New Image Slide
+            reorder: Reorder Image Slides
+            reorder_done: Done Reordering Image Slides
+          records:
+            title: Image Slides
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Image Slides yet. Click "Add New Image Slide"
+              to add your first image slide.
+          image_slide:
+            view_live_html: View this image slide live <br/><em>(opens in a new window)</em>
+            edit: Edit this image slide
+            delete: Remove this image slide forever
+      image_slides:
+        show:
+          other: Other Image Slides
     image_slideshows:
       admin:
         image_slideshows:
@@ -13,9 +34,11 @@ en:
           records:
             title: Image Slideshows
             sorry_no_results: Sorry! There are no results found.
-            no_items_yet: There are no Image Slideshows yet. Click "Add New Image Slideshow" to add your first image slideshow.
+            no_items_yet: There are no Image Slideshows yet. Click "Add New Image
+              Slideshow" to add your first image slideshow.
           image_slideshow:
-            view_live_html: View this image slideshow live <br/><em>(opens in a new window)</em>
+            view_live_html: View this image slideshow live <br/><em>(opens in a new
+              window)</em>
             edit: Edit this image slideshow
             delete: Remove this image slideshow forever
       image_slideshows:
@@ -23,5 +46,7 @@ en:
           other: Other Image Slideshows
   activerecord:
     attributes:
-      'refinery/image_slideshows/image_slideshow':
+      refinery/image_slides/image_slide:
+        title: Title
+      refinery/image_slideshows/image_slideshow:
         title: Title

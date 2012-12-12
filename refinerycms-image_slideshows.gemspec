@@ -3,7 +3,6 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-image_slideshows'
-  s.authors           = ['Jim Pruetting']
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Image Slideshows extension for Refinery CMS'
   s.date              = '2012-12-12'
