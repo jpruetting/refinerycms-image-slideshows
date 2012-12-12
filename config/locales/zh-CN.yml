@@ -1,0 +1,29 @@
+zh-CN:
+  refinery:
+    plugins:
+      image_slideshows:
+        title: Image Slideshows
+    image_slideshows:
+      admin:
+        image_slideshows:
+          actions:
+            create_new: 建立新的 Image Slideshow
+            reorder: 对 Image Slideshows 重新排序
+            reorder_done: 对 Image Slideshows 的重新排序结束
+          records:
+            title: Image Slideshows
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Image Slideshows yet. Click "Add New Image Slideshow" to add your first image slideshow.
+            no_items_yet: 目前没有 Image Slideshows . 点击 "Add New Image Slideshow" 创建一个image slideshow.
+          image_slideshow:
+            view_live_html: 查看 image slideshow 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 image slideshow
+            delete: 永久删除 image slideshow
+      image_slideshows:
+        show:
+          other: 其他 Image Slideshows
+  activerecord:
+    attributes:
+      'refinery/image_slideshows/image_slideshow':
+        title: Title

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="image_slideshows">
+    <% @image_slideshows.each do |image_slideshow| %>
+      <li>
+        <%= link_to image_slideshow.title, refinery.image_slideshows_image_slideshow_path(image_slideshow) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

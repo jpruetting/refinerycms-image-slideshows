@@ -1,0 +1,27 @@
+sk:
+  refinery:
+    plugins:
+      image_slideshows:
+        title: Image Slideshows
+    image_slideshows:
+      admin:
+        image_slideshows:
+          actions:
+            create_new: Pridať Image Slideshow
+            reorder: Preusporiadať Image Slideshows
+            reorder_done: Koniec radenia Image Slideshows
+          records:
+            title: Image Slideshows
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Image Slideshows. Kliknite na "Pridať Image Slideshow" pre pridanie prvého image slideshow.
+          image_slideshow:
+            view_live_html: Zobraziť náhľad image slideshow<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť image slideshow
+            delete: Zmazať image slideshow
+      image_slideshows:
+        show:
+          other: Daľšie Image Slideshows
+  activerecord:
+    attributes:
+      'refinery/image_slideshows/image_slideshow':
+        title: Title

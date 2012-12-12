@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      image_slideshows:
+        title: Image Slideshows
+    image_slideshows:
+      admin:
+        image_slideshows:
+          actions:
+            create_new: Lag en ny Image Slideshow
+            reorder: Endre rekkefølgen på Image Slideshows
+            reorder_done: Ferdig å endre rekkefølgen Image Slideshows
+          records:
+            title: Image Slideshows
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Image Slideshows enda. Klikk på "Lag en ny Image Slideshow" for å legge til din første image slideshow.
+          image_slideshow:
+            view_live_html: Vis hvordan denne image slideshow ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne image slideshow
+            delete: Fjern denne image slideshow permanent
+      image_slideshows:
+        show:
+          other: Andre Image Slideshows
+  activerecord:
+    attributes:
+      'refinery/image_slideshows/image_slideshow':
+        title: Title

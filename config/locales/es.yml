@@ -1,0 +1,28 @@
+es:
+  refinery:
+    plugins:
+      image_slideshows:
+        title: Image Slideshows
+#        article: masculino/femenino
+    image_slideshows:
+      admin:
+        image_slideshows:
+          actions:
+            create_new: Crear nuevo image slideshow
+            reorder: Reordenar image slideshows
+            reorder_done: Reordenación de image slideshows completada
+          records:
+            title: Image Slideshows
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay image slideshows todavía. Pulsa en "Crear nuevo Image Slideshow" para crear tu primer image slideshow.
+          image_slideshow:
+            view_live_html: Ver este image slideshow como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este image slideshow
+            delete: Borrar este image slideshow para siempre
+      image_slideshows:
+        show:
+          other: Otros image slideshows
+  activerecord:
+    attributes:
+      'refinery/image_slideshows/image_slideshow':
+        title: Title

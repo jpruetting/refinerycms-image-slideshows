@@ -1,0 +1,27 @@
+fr:
+  refinery:
+    plugins:
+      image_slideshows:
+        title: Image Slideshows
+    image_slideshows:
+      admin:
+        image_slideshows:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Image Slideshow
+            reorder: Réordonner les Image Slideshows
+            reorder_done: Fin de réordonnancement des Image Slideshows
+          records:
+            title: Image Slideshows
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Image Slideshow. Cliquer sur "Créer un(e) nouve(au/l/lle) Image Slideshow" pour créer votre premi(er/ère) image slideshow.'
+          image_slideshow:
+            view_live_html: Voir ce(t/tte) image slideshow <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) image slideshow
+            delete: Supprimer définitivement ce(t/tte) image slideshow
+      image_slideshows:
+        show:
+          other: Autres Image Slideshows
+  activerecord:
+    attributes:
+      'refinery/image_slideshows/image_slideshow':
+        title: Title

@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      image_slideshows:
+        title: Image Slideshows
+    image_slideshows:
+      admin:
+        image_slideshows:
+          actions:
+            create_new: Maak een nieuwe Image Slideshow
+            reorder: Wijzig de volgorde van de Image Slideshows
+            reorder_done: Klaar met het wijzingen van de volgorde van de Image Slideshows
+          records:
+            title: Image Slideshows
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Image Slideshows. Druk op 'Maak een nieuwe Image Slideshow' om de eerste aan te maken.
+          image_slideshow:
+            view_live_html: Bekijk deze image slideshow op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze image slideshow
+            delete: Verwijder deze image slideshow voor eeuwig
+      image_slideshows:
+        show:
+          other: Andere Image Slideshows
+  activerecord:
+    attributes:
+      'refinery/image_slideshows/image_slideshow':
+        title: Title

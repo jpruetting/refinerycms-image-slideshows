@@ -1,0 +1,27 @@
+en:
+  refinery:
+    plugins:
+      image_slideshows:
+        title: Image Slideshows
+    image_slideshows:
+      admin:
+        image_slideshows:
+          actions:
+            create_new: Add New Image Slideshow
+            reorder: Reorder Image Slideshows
+            reorder_done: Done Reordering Image Slideshows
+          records:
+            title: Image Slideshows
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Image Slideshows yet. Click "Add New Image Slideshow" to add your first image slideshow.
+          image_slideshow:
+            view_live_html: View this image slideshow live <br/><em>(opens in a new window)</em>
+            edit: Edit this image slideshow
+            delete: Remove this image slideshow forever
+      image_slideshows:
+        show:
+          other: Other Image Slideshows
+  activerecord:
+    attributes:
+      'refinery/image_slideshows/image_slideshow':
+        title: Title
