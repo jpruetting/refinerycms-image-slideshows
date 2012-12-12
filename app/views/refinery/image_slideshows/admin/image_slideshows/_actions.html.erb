@@ -1,25 +1,6 @@
 <ul>
-  <% if ::Refinery::ImageSlideshows::Admin::ImageSlideshowsController.searchable? %>
-    <li>
-      <%= render '/refinery/admin/search', :url => refinery.image_slideshows_admin_image_slideshows_path %>
-    </li>
-  <% end %>
   <li>
     <%= link_to t('.create_new'), refinery.new_image_slideshows_admin_image_slideshow_path,
                  :class => "add_icon" %>
   </li>
-<% if !searching? && ::Refinery::ImageSlideshows::Admin::ImageSlideshowsController.sortable? && ::Refinery::ImageSlideshows::ImageSlideshow.any? %>
-  <li>
-    <%= link_to t('.reorder', :what => "Image Slideshows"),
-                 refinery.image_slideshows_admin_image_slideshows_path,
-                 :id => "reorder_action",
-                 :class => "reorder_icon" %>
-
-    <%= link_to t('.reorder_done', :what => "Image Slideshows"),
-                 refinery.image_slideshows_admin_image_slideshows_path,
-                 :id => "reorder_action_done",
-                 :style => "display: none;",
-                 :class => "reorder_icon" %>
-  </li>
-<% end %>
 </ul>
