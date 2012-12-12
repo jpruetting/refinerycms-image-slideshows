@@ -4,8 +4,10 @@
 
   </span>
   <span class='actions'>
+    <%= link_to refinery_icon_tag("img.png"), refinery.edit_image_slideshows_admin_image_slideshow_path(image_slideshow),
+         :title => 'Manage image slides' %>
     <%= link_to refinery_icon_tag("application_edit.png"), refinery.edit_image_slideshows_admin_image_slideshow_path(image_slideshow),
-         :title => t('.edit') %>
+         :title => 'Edit this image slideshow' %>
     <%= link_to refinery_icon_tag("delete.png"), refinery.image_slideshows_admin_image_slideshow_path(image_slideshow),
         :class => "cancel confirm-delete",
         :title => t('.delete'),
