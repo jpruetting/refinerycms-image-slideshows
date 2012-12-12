@@ -15,10 +15,6 @@ class CreateImageSlideshowsImageSlideshows < ActiveRecord::Migration
       ::Refinery::UserPlugin.destroy_all({:name => "refinerycms-image_slideshows"})
     end
 
-    if defined?(::Refinery::Page)
-      ::Refinery::Page.delete_all({:link_url => "/image_slideshows/image_slideshows"})
-    end
-
     drop_table :refinery_image_slideshows
 
   end
