@@ -13,8 +13,7 @@ module Refinery
 
         def create
           params[:image_slide].merge!({
-            :position => Refinery::ImageSlideshows::ImageSlide.maximum(:position) + 1,
-            :refinery_image_slideshow_id => params[:image_slideshow_id]
+            :position => Refinery::ImageSlideshows::ImageSlide.maximum(:position) + 1
           })
 
           @image_slide = Refinery::ImageSlideshows::ImageSlide.new(params[:image_slide])

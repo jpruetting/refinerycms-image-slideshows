@@ -4,7 +4,7 @@ class CreateImageSlidesImageSlides < ActiveRecord::Migration
     create_table :refinery_image_slides do |t|
       t.string :title
       t.integer :position
-      t.integer :refinery_image_slideshow_id
+      t.integer :image_slideshow_id
 
       t.timestamps
     end

@@ -9,7 +9,7 @@ module Refinery
 
       validates :title, :presence => true, :uniqueness => true
 
-      has_many :image_slides, :foreign_key => 'refinery_image_slideshow_id', :class_name => 'Refinery::ImageSlideshows::ImageSlide', :dependent => :destroy
+      has_many :image_slides, :dependent => :destroy
     end
   end
 end
