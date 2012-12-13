@@ -4,7 +4,7 @@
 
 ## About
 
-__The Image Slideshows engine allows you to create groups of images for use by a JavaScript image slider.__
+__Image Slideshows allows you to create groups of images for use by a JavaScript image slider.__
 
 Suggested image slider: [Nivo Slider](http://nivo.dev7studios.com)
 
@@ -20,7 +20,7 @@ Include the latest [gem](http://rubygems.org/gems/refinerycms-image_slideshows) 
 gem "refinerycms-image_slideshows", '~> 1.0'
 ```
 
-Then type the following at command line inside your Refinery CMS application's root directory:
+Then type the following at the command line inside your Refinery CMS application's root directory:
 
     bundle install
     rails generate refinery:image_slideshows
@@ -30,7 +30,7 @@ Then type the following at command line inside your Refinery CMS application's r
 ## How to display a slideshow with [Nivo Slider](http://nivo.dev7studios.com):
 
 ```erb
-<body>
+  <body>
     <div id="wrapper">
       <div class="slider-wrapper theme-default">
         <div id="slider" class="nivoSlider">
