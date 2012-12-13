@@ -8,6 +8,8 @@ module Refinery
       acts_as_indexed :fields => [:title]
 
       validates :title, :presence => true, :uniqueness => true
+
+      has_many :image_slides, :foreign_key => 'refinery_image_slideshow_id', :class_name => 'Refinery::ImageSlideshows::ImageSlide', :dependent => :destroy
     end
   end
 end
