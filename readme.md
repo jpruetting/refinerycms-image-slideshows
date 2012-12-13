@@ -29,7 +29,7 @@ Then type the following at the command line inside your Refinery CMS application
     
 ## How to display a slideshow with [Nivo Slider](http://nivo.dev7studios.com):
 
-```html-erb
+```html
   <body>
     <div id="wrapper">
       <div class="slider-wrapper theme-default">
