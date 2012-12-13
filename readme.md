@@ -31,6 +31,7 @@ Then type the following at the command line inside your Refinery CMS application
 
 ```html+erb
   <body>
+    <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.find_by_title('Demo') %>
     <div id="wrapper">
       <div class="slider-wrapper theme-default">
         <div id="slider" class="nivoSlider">
