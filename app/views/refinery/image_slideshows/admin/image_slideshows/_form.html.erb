@@ -7,7 +7,11 @@
   <div class='field'>
     <%= f.label :title -%>
     <%= f.text_field :title, :class => 'larger widest'  -%>
+  </div>
 
+  <div class='field'>
+    <%= f.label :js_config, 'JavaScript Config' -%>
+    <%= f.text_area :js_config, :cols => 80, :rows => 20  -%>
   </div>
   
   <%= render '/refinery/admin/form_actions', :f => f,

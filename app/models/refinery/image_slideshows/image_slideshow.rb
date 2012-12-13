@@ -3,7 +3,7 @@ module Refinery
     class ImageSlideshow < Refinery::Core::BaseModel
       self.table_name = 'refinery_image_slideshows'
 
-      attr_accessible :title, :position
+      attr_accessible :title, :position, :js_config
 
       acts_as_indexed :fields => [:title]
 
