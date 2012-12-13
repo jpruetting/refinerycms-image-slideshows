@@ -1,7 +1,8 @@
 <li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(image_slideshow) -%>">
   <span class='title'>
-    <%= image_slideshow.title %>
-
+    <%= link_to refinery.image_slideshows_admin_image_slideshow_image_slides_path(image_slideshow) do %>
+      <%= image_slideshow.title %> Slideshow
+    <% end %>
   </span>
   <span class='actions'>
     <%= link_to refinery_icon_tag("img.png"), refinery.image_slideshows_admin_image_slideshow_image_slides_path(image_slideshow),
