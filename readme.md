@@ -37,7 +37,7 @@ Then type the following at the command line inside your Refinery CMS application
         <div id="slider" class="nivoSlider">
           <% main_slideshow.image_slides.each do |image_slide| %>
             <%= link_to image_slide.link_url do %>
-              <img src="<%= image_slide.image.url %>" alt="<%= image_slide.title %>" title="<%= image_slide.caption %>" />
+              <%= image_tag image_slide.image.url, :alt => image_slide.title, :title => image_slide.caption %>
             <% end %>
           <% end %>
         </div>
