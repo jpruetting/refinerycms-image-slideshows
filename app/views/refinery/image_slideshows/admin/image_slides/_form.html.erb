@@ -26,6 +26,11 @@
     <%= f.text_field :caption -%>
   </div>
 
+  <div class='field'>
+    <%= f.label :link_url -%>
+    <%= f.text_field :link_url -%>
+  </div>
+
   <% delete_url = @image_slide.id ? refinery.image_slideshows_admin_image_slideshow_image_slide_path(@image_slideshow, @image_slide) : nil %>
   
   <%= render '/refinery/admin/form_actions', :f => f,
