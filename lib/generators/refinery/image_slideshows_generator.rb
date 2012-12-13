@@ -11,7 +11,7 @@ module Refinery
         <<-EOH
 
 # Added by Refinery CMS Image Slides extension
-Refinery::ImageSlides::Engine.load_seed
+Refinery::ImageSlideshows::Engine.load_seed
         EOH
       end
     end

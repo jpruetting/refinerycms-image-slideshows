@@ -14,7 +14,7 @@ module Refinery
           plugin.activity = {
             :class_name => :'refinery/image_slideshows/image_slideshow'
           }
-          
+          plugin.menu_match = %r{refinery/(image_slides|image_slideshows)(/.+?)?$}
         end
       end
 
