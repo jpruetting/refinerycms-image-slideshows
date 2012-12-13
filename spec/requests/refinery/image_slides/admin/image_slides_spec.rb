@@ -14,7 +14,7 @@ describe Refinery do
           end
 
           it "shows two items" do
-            visit refinery.image_slides_admin_image_slides_path
+            visit refinery.image_slideshows_admin_image_slides_path
             page.should have_content("UniqueTitleOne")
             page.should have_content("UniqueTitleTwo")
           end
@@ -22,7 +22,7 @@ describe Refinery do
 
         describe "create" do
           before do
-            visit refinery.image_slides_admin_image_slides_path
+            visit refinery.image_slideshows_admin_image_slides_path
 
             click_link "Add New Image Slide"
           end
@@ -33,7 +33,7 @@ describe Refinery do
               click_button "Save"
 
               page.should have_content("'This is a test of the first string field' was successfully added.")
-              Refinery::ImageSlides::ImageSlide.count.should == 1
+              Refinery::ImageSlideshows::ImageSlide.count.should == 1
             end
           end
 
@@ -42,7 +42,7 @@ describe Refinery do
               click_button "Save"
 
               page.should have_content("Title can't be blank")
-              Refinery::ImageSlides::ImageSlide.count.should == 0
+              Refinery::ImageSlideshows::ImageSlide.count.should == 0
             end
           end
 
@@ -50,7 +50,7 @@ describe Refinery do
             before { FactoryGirl.create(:image_slide, :title => "UniqueTitle") }
 
             it "should fail" do
-              visit refinery.image_slides_admin_image_slides_path
+              visit refinery.image_slideshows_admin_image_slides_path
 
               click_link "Add New Image Slide"
 
@@ -58,7 +58,7 @@ describe Refinery do
               click_button "Save"
 
               page.should have_content("There were problems")
-              Refinery::ImageSlides::ImageSlide.count.should == 1
+              Refinery::ImageSlideshows::ImageSlide.count.should == 1
             end
           end
 
@@ -68,7 +68,7 @@ describe Refinery do
           before { FactoryGirl.create(:image_slide, :title => "A title") }
 
           it "should succeed" do
-            visit refinery.image_slides_admin_image_slides_path
+            visit refinery.image_slideshows_admin_image_slides_path
 
             within ".actions" do
               click_link "Edit this image slide"
@@ -86,12 +86,12 @@ describe Refinery do
           before { FactoryGirl.create(:image_slide, :title => "UniqueTitleOne") }
 
           it "should succeed" do
-            visit refinery.image_slides_admin_image_slides_path
+            visit refinery.image_slideshows_admin_image_slides_path
 
             click_link "Remove this image slide forever"
 
             page.should have_content("'UniqueTitleOne' was successfully removed.")
-            Refinery::ImageSlides::ImageSlide.count.should == 0
+            Refinery::ImageSlideshows::ImageSlide.count.should == 0
           end
         end
 
