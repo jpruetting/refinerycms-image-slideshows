@@ -1,0 +1,36 @@
+<%= form_for [refinery, :image_slideshows_admin, @image_slideshow, @image_slide] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @image_slide,
+              :include_object_name => true %>
+
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest'  -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_id, 'Image' %>
+
+    <%= render :partial => '/refinery/admin/image_picker', :locals => {
+      :f => f,
+      :field => :image_id,
+      :image => @image_slide.image,
+      :thumbnail => ''
+    } %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :caption -%>
+    <%= f.text_field :caption -%>
+  </div>
+
+  <% delete_url = @image_slide.id ? refinery.image_slideshows_admin_image_slideshow_image_slide_path(@image_slideshow, @image_slide) : nil %>
+  
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.image_slides.admin.image_slides.image_slide'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @image_slide.title),
+             :delete_url => delete_url,
+             :cancel_url => refinery.image_slideshows_admin_image_slideshow_image_slides_path(@image_slideshow) %>
+<% end -%>

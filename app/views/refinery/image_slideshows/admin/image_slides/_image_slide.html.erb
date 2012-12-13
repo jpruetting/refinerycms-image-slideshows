@@ -1,0 +1,14 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(image_slide) -%>" style="background-color: #EAEAEA; margin-bottom: 10px;">
+  <span class='title'>
+    <%= image_fu image_slide.image, '255x255', :style => 'padding: 15px 0 0 10px;' %>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag("application_edit.png"), refinery.edit_image_slideshows_admin_image_slideshow_image_slide_path(@image_slideshow, image_slide),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), refinery.image_slideshows_admin_image_slideshow_image_slide_path(@image_slideshow, image_slide),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'refinery.admin.delete', :title => image_slide.title),
+        :method => :delete %>
+  </span>
+</li>

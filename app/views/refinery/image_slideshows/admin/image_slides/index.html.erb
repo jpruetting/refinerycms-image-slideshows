@@ -1,0 +1,10 @@
+<% if @image_slideshow.present? %>
+  <h2><%= @image_slideshow.title %> Slideshow</h2>
+<% end %>
+<section id='records'>
+  <%= render 'records' %>
+</section>
+<aside id='actions'>
+  <%= render 'actions' %>
+</aside>
+<%= render '/refinery/admin/make_sortable', :tree => false if ::Refinery::ImageSlideshows::ImageSlide.count > 1 %>
