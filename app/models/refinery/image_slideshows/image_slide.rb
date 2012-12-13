@@ -12,6 +12,8 @@ module Refinery
 
       belongs_to :image_slideshow
       belongs_to :image
+
+      delegate :height, :width, :to => :image_slideshow
     end
   end
 end
