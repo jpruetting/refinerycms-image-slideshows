@@ -1,6 +1,6 @@
 # Image Slideshows
 
-![Refinery Image Slideshows](http://refinerycms.com/system/images/0000/0876/news.png)
+![Refinery Image Slideshows](https://dl.dropbox.com/u/80562357/Upload/gem_refinerycms_image_slideshows.png)
 
 ## About
 
