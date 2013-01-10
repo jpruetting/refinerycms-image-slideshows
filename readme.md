@@ -19,7 +19,7 @@ Suggested image slider: [Nivo Slider](http://nivo.dev7studios.com)
 Include the latest [gem](http://rubygems.org/gems/refinerycms-image_slideshows) into your Refinery CMS application's Gemfile:
 
 ```ruby
-gem "refinerycms-image_slideshows", '~> 1.0'
+gem "refinerycms-image_slideshows", '~> 2.0.1'
 ```
 
 Then type the following at the command line inside your Refinery CMS application's root directory:

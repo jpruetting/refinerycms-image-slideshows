@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.authors           = ['Jim Pruetting']
   s.email             = 'jim@roboticmethod.com'
   s.homepage          = 'http://refinerycms.com'
-  s.version           = '1.12'
+  s.version           = '2.0.1'
   s.description       = 'Ruby on Rails Image Slideshows extension for Refinery CMS'
   s.date              = '2012-12-12'
   s.summary           = 'Image Slideshows extension for Refinery CMS'
